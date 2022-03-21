@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  AkkaStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: fire-alert
+      RetentionPeriodHours: 168 
+      ShardCount: 5
+  
